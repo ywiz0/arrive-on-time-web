@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRIVE ON TIME</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- iOS Status Bar -->
+    <div class="bg-black text-white h-12 flex items-center px-4 fixed top-0 left-0 right-0 z-50">
+        <div class="flex-1">9:41</div>
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mt-12">
+        <div class="max-w-md w-full space-y-8 bg-white p-8 rounded-2xl shadow-sm">
+            <!-- Logo and Title -->
+            <div class="text-center">
+                <div class="w-20 h-20 bg-green-500 rounded-2xl mx-auto flex items-center justify-center">
+                    <i class="fas fa-running text-white text-4xl"></i>
+                </div>
+                <h2 class="mt-6 text-3xl font-bold text-gray-900">
+                    ARRIVE ON TIME
+                </h2>
+                <p class="mt-2 text-base text-gray-600">
+                    Join local sports matches easily
+                </p>
+            </div>
+
+            <!-- Demo Account Notice -->
+            <div class="bg-blue-50 p-4 rounded-xl">
+                <p class="text-sm text-blue-700">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    Demo account is pre-filled. Click "Sign In" to explore all features.
+                </p>
+            </div>
+
+            <!-- Login Form -->
+            <form class="mt-8 space-y-6" id="loginForm">
+                <div class="space-y-4">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input id="email" name="email" type="email" value="demo@example.com" required 
+                            class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                            placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <input id="password" name="password" type="password" value="demo123" required
+                            class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                            placeholder="Enter your password">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-end">
+                    <a href="#" class="text-sm font-medium text-green-600 hover:text-green-500">
+                        Forgot password?
+                    </a>
+                </div>
+
+                <div>
+                    <button type="submit" 
+                        class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-base font-medium rounded-xl text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200">
+                        <i class="fas fa-sign-in-alt mr-2"></i>
+                        Sign In
+                    </button>
+                </div>
+            </form>
+
+            <!-- Sign Up Link -->
+            <div class="text-center mt-6">
+                <p class="text-sm text-gray-600">
+                    Don't have an account? 
+                    <a href="register.html" class="font-medium text-green-600 hover:text-green-500">
+                        Sign up
+                    </a>
+                </p>
+            </div>
+
+            <!-- iOS Home Indicator -->
+            <div class="fixed bottom-0 left-0 right-0 pb-2 flex justify-center">
+                <div class="w-32 h-1 bg-black rounded-full opacity-20"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

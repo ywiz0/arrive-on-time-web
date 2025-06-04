@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - ARRIVE ON TIME</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- iOS Status Bar -->
+    <div class="bg-black text-white h-12 flex items-center px-4 fixed top-0 left-0 right-0 z-50">
+        <div class="flex-1">9:41</div>
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <div class="min-h-screen pt-12">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-900">
+                    Choose Your Plan
+                </h2>
+                <p class="mt-2 text-base text-gray-600">
+                    Select the membership that best suits your needs
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Basic Plan -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-200">
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900">Basic Plan</h3>
+                            <p class="text-sm text-gray-500 mt-1">Perfect for casual players</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-900">Free</div>
+                            <div class="text-sm text-gray-500">Forever</div>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Join up to 5 matches per month</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Basic player profile</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Standard matchmaking</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times text-gray-300 mr-3"></i>
+                            <span>Priority venue booking</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-times text-gray-300 mr-3"></i>
+                            <span>Advanced player statistics</span>
+                        </li>
+                    </ul>
+                    <button class="mt-6 w-full py-3 px-4 border-2 border-green-600 text-green-600 font-medium rounded-xl hover:bg-green-50 transition-colors duration-200">
+                        Select Basic Plan
+                    </button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-200 relative overflow-hidden">
+                    <!-- Popular Badge -->
+                    <div class="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        POPULAR
+                    </div>
+                    
+                    <div class="flex items-start justify-between mb-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900">Premium Plan</h3>
+                            <p class="text-sm text-gray-500 mt-1">For serious players</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-gray-900">$9.99</div>
+                            <div class="text-sm text-gray-500">per month</div>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Unlimited matches</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Enhanced player profile with stats</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Priority matchmaking</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Exclusive venue access</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Advanced player analytics</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>24/7 priority support</span>
+                        </li>
+                    </ul>
+                    <button class="mt-6 w-full py-3 px-4 bg-green-600 text-white font-medium rounded-xl hover:bg-green-700 transition-colors duration-200">
+                        Start Premium Trial
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bottom Navigation Bar -->
+            <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-4">
+                <div class="max-w-4xl mx-auto flex justify-between items-center">
+                    <button onclick="history.back()" 
+                        class="px-6 py-3 text-gray-700 font-medium">
+                        Back
+                    </button>
+                    <button onclick="location.href='profile.html'" id="continueBtn"
+                        class="px-6 py-3 bg-green-600 text-white font-medium rounded-xl">
+                        Skip for now
+                    </button>
+                </div>
+                <!-- iOS Home Indicator -->
+                <div class="h-8 flex justify-center items-end">
+                    <div class="w-32 h-1 bg-black rounded-full opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Sports - ARRIVE ON TIME</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="flex items-center">
+                <h1 class="text-xl font-bold">ARRIVE ON TIME</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="button button-secondary">
+                    <i class="fas fa-globe mr-2"></i>
+                    EN
+                </button>
+                <button class="button button-secondary">
+                    <i class="fas fa-user-circle mr-2"></i>
+                    Profile
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Select Your Sports</h2>
+            <p class="text-gray-600 text-lg">Choose the sports you're interested in playing</p>
+        </div>
+
+        <div class="sports-grid">
+            <!-- Basketball -->
+            <div class="sport-card">
+                <img src="images/sports/basketball.svg" alt="Basketball" class="sport-icon">
+                <h3 class="sport-title">Basketball</h3>
+                <p class="sport-subtitle">Indoor & Outdoor</p>
+            </div>
+
+            <!-- Football -->
+            <div class="sport-card">
+                <img src="images/sports/football.svg" alt="Football" class="sport-icon">
+                <h3 class="sport-title">Football</h3>
+                <p class="sport-subtitle">5v5 & 11v11</p>
+            </div>
+
+            <!-- Table Tennis -->
+            <div class="sport-card">
+                <img src="images/sports/table-tennis.svg" alt="Table Tennis" class="sport-icon">
+                <h3 class="sport-title">Table Tennis</h3>
+                <p class="sport-subtitle">Singles & Doubles</p>
+            </div>
+
+            <!-- Volleyball -->
+            <div class="sport-card">
+                <img src="images/sports/volleyball.svg" alt="Volleyball" class="sport-icon">
+                <h3 class="sport-title">Volleyball</h3>
+                <p class="sport-subtitle">Indoor & Beach</p>
+            </div>
+
+            <!-- Running -->
+            <div class="sport-card">
+                <img src="images/sports/running.svg" alt="Running" class="sport-icon">
+                <h3 class="sport-title">Running</h3>
+                <p class="sport-subtitle">Track & Trail</p>
+            </div>
+
+            <!-- Swimming -->
+            <div class="sport-card">
+                <img src="images/sports/swimming.svg" alt="Swimming" class="sport-icon">
+                <h3 class="sport-title">Swimming</h3>
+                <p class="sport-subtitle">Pool & Open Water</p>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button onclick="history.back()" class="button button-secondary">
+                <i class="fas fa-arrow-left mr-2"></i>
+                Back
+            </button>
+            <button onclick="location.href='skill-level.html'" class="button button-primary">
+                Continue
+                <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Add click handler for sport cards
+        document.querySelectorAll('.sport-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.classList.toggle('selected');
+            });
+        });
+    </script>
+</body>
+</html> 

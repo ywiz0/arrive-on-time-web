@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - ARRIVE ON TIME</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- iOS Status Bar -->
+    <div class="bg-black text-white h-12 flex items-center px-4 fixed top-0 left-0 right-0 z-50">
+        <div class="flex-1">9:41</div>
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <div class="min-h-screen pt-12">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+            <div class="flex items-center mb-8">
+                <button onclick="history.back()" class="text-gray-600 mr-4">
+                    <i class="fas fa-arrow-left text-xl"></i>
+                </button>
+                <h2 class="text-2xl font-bold text-gray-900">Settings</h2>
+            </div>
+
+            <!-- Account Settings -->
+            <div class="bg-white rounded-2xl shadow-sm mb-6">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Account</h3>
+                    <div class="space-y-4">
+                        <a href="profile.html" class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-user text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">Edit Profile</span>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </a>
+                        <a href="membership.html" class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-crown text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">Membership</span>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </a>
+                        <div class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-bell text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">Push Notifications</span>
+                            </div>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-6 py-4 border-t border-gray-100">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Language</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-globe text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">App Language</span>
+                            </div>
+                            <select class="text-gray-700 bg-transparent focus:outline-none">
+                                <option value="en">English</option>
+                                <option value="kr">Korean</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App Settings -->
+            <div class="bg-white rounded-2xl shadow-sm mb-6">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">App Settings</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-map text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">Default Map</span>
+                            </div>
+                            <select class="text-gray-700 bg-transparent focus:outline-none">
+                                <option value="naver">Naver Maps</option>
+                                <option value="kakao">Kakao Maps</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">Time Format</span>
+                            </div>
+                            <select class="text-gray-700 bg-transparent focus:outline-none">
+                                <option value="24">24-hour</option>
+                                <option value="12">12-hour</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-moon text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">Dark Mode</span>
+                            </div>
+                            <label class="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" class="sr-only peer">
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Help & Support -->
+            <div class="bg-white rounded-2xl shadow-sm mb-20">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Help & Support</h3>
+                    <div class="space-y-4">
+                        <a href="#" class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-question-circle text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">FAQ</span>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">Contact Support</span>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-alt text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">Terms of Service</span>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </a>
+                        <a href="#" class="flex items-center justify-between py-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-shield-alt text-gray-400 w-6"></i>
+                                <span class="ml-3 text-gray-700">Privacy Policy</span>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-400"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logout Button -->
+            <button onclick="location.href='index.html'" class="w-full py-3 px-4 bg-red-500 text-white font-medium rounded-xl hover:bg-red-600 transition-colors duration-200">
+                <i class="fas fa-sign-out-alt mr-2"></i>
+                Logout
+            </button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Match - ARRIVE ON TIME</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- iOS Status Bar -->
+    <div class="bg-black text-white h-12 flex items-center px-4 fixed top-0 left-0 right-0 z-50">
+        <div class="flex-1">9:41</div>
+        <div class="flex items-center space-x-2">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+
+    <div class="min-h-screen pt-12">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+            <div class="flex items-center mb-8">
+                <button onclick="history.back()" class="text-gray-600 mr-4">
+                    <i class="fas fa-arrow-left text-xl"></i>
+                </button>
+                <h2 class="text-2xl font-bold text-gray-900">Create Match</h2>
+            </div>
+
+            <!-- Sport Selection -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm mb-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Select Sport</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="sport-option bg-gray-50 p-4 rounded-xl cursor-pointer hover:bg-green-50 transition-colors duration-200">
+                        <i class="fas fa-basketball-ball text-green-500 text-2xl mb-2"></i>
+                        <div class="font-medium text-gray-900">Basketball</div>
+                        <div class="text-sm text-gray-500">5v5</div>
+                    </div>
+                    <div class="sport-option bg-gray-50 p-4 rounded-xl cursor-pointer hover:bg-green-50 transition-colors duration-200">
+                        <i class="fas fa-futbol text-green-500 text-2xl mb-2"></i>
+                        <div class="font-medium text-gray-900">Football</div>
+                        <div class="text-sm text-gray-500">7v7</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Date & Time Selection -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm mb-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">When do you want to play?</h3>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Date</label>
+                        <input type="date" 
+                            class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Start Time</label>
+                            <input type="time" 
+                                class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Duration</label>
+                            <select class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                                <option>1 hour</option>
+                                <option>1.5 hours</option>
+                                <option>2 hours</option>
+                                <option>2.5 hours</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Venue Selection -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm mb-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Choose Venue</h3>
+                <div class="space-y-4">
+                    <div class="venue-option flex items-center justify-between p-4 bg-gray-50 rounded-xl cursor-pointer hover:bg-green-50 transition-colors duration-200">
+                        <div class="flex items-center">
+                            <i class="fas fa-basketball-ball text-green-500 text-xl mr-4"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Central Sports Center</h4>
+                                <p class="text-sm text-gray-500">2.3km away • $30/hour</p>
+                            </div>
+                        </div>
+                        <button class="text-green-600" onclick="window.open('https://map.naver.com')">
+                            <i class="fas fa-location-arrow"></i>
+                        </button>
+                    </div>
+
+                    <div class="venue-option flex items-center justify-between p-4 bg-gray-50 rounded-xl cursor-pointer hover:bg-green-50 transition-colors duration-200">
+                        <div class="flex items-center">
+                            <i class="fas fa-basketball-ball text-green-500 text-xl mr-4"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-900">City Sports Complex</h4>
+                                <p class="text-sm text-gray-500">3.5km away • $25/hour</p>
+                            </div>
+                        </div>
+                        <button class="text-green-600" onclick="window.open('https://map.naver.com')">
+                            <i class="fas fa-location-arrow"></i>
+                        </button>
+                    </div>
+
+                    <div class="venue-option flex items-center justify-between p-4 bg-gray-50 rounded-xl cursor-pointer hover:bg-green-50 transition-colors duration-200">
+                        <div class="flex items-center">
+                            <i class="fas fa-basketball-ball text-green-500 text-xl mr-4"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-900">University Gym</h4>
+                                <p class="text-sm text-gray-500">4.1km away • $20/hour</p>
+                            </div>
+                        </div>
+                        <button class="text-green-600" onclick="window.open('https://map.naver.com')">
+                            <i class="fas fa-location-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Match Settings -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm mb-20">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Match Settings</h3>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Number of Players</label>
+                        <select class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <option>5v5 (10 players)</option>
+                            <option>3v3 (6 players)</option>
+                            <option>4v4 (8 players)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Skill Level Required</label>
+                        <select class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                            <option>All Levels Welcome</option>
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Cost per Player</label>
+                        <div class="mt-1 relative">
+                            <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-gray-500">$</span>
+                            <input type="number" value="10" 
+                                class="block w-full pl-8 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                                placeholder="Enter amount">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Navigation Bar -->
+            <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-4">
+                <div class="max-w-4xl mx-auto">
+                    <button onclick="location.href='match-success.html'" class="w-full py-3 px-4 bg-green-600 text-white font-medium rounded-xl hover:bg-green-700 transition-colors duration-200">
+                        Create Match
+                    </button>
+                </div>
+                <!-- iOS Home Indicator -->
+                <div class="h-8 flex justify-center items-end">
+                    <div class="w-32 h-1 bg-black rounded-full opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
